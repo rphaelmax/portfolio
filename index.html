@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Raphael Max — Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="color-scheme" content="light dark">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="brand" style="font-weight: bold;">Raphael Max</a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-pressed="false">🌓</button>
+    </div>
+  </header>
+  <main id="main">
+    <section id="inicio" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Olá, eu sou <strong>Raphael Max</strong></h1>
+          <p class="lead">Desenvolvedor Full Stack</p>
+          <p>
+            <a class="btn primary" href="#projetos">Ver projetos</a>
+            <a class="btn ghost" href="assets/Currículo - Raphael Max Alves Jacomo.pdf" download>Download CV</a>
+          </p>
+        </div>
+        <div class="hero-card">
+          <div class="avatar-placeholder"><img src="assets/avatar.jpeg" alt="Avatar"></div>
+        </div>
+      </div>
+    </section>
+    <section id="sobre" class="section alt">
+      <div class="container">
+        <h2>Sobre mim</h2>
+        <p>Sou estudante de TI, em constante aprendizado e desenvolvimento de habilidades na área de tecnologia. Meu
+          objetivo é evoluir como futuro profissional, aplicando meus conhecimentos em projetos práticos e construindo
+          uma carreira sólida no setor.
+        </p>
+      </div>
+    </section>
+    <section id="habilidades" class="section gray-bg">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <ul class="skills-grid">
+          <li>
+            <h3>HTML & CSS</h3>
+            <div class="skill-bar"><span style="--w:70%"></span></div>
+          </li>
+          <li>
+            <h3>JavaScript</h3>
+            <div class="skill-bar"><span style="--w:45%"></span></div>
+          </li>
+          <li>
+            <h3>MySQL</h3>
+            <div class="skill-bar"><span style="--w:40%"></span></div>
+          </li>
+          <li>
+            <h3>C#</h3>
+            <div class="skill-bar"><span style="--w:60%"></span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="projetos" class="section gray-bg">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="projects-grid">
+          <a href="https://github.com/rphaelmax/site-ecommerce" target="_blank" class="project-card">
+            <h3>Site E-Commerce</h3>
+            <p>Projeto Escolar</p>
+          </a>
+          <a href="https://github.com/rphaelmax/site-belara" target="_blank" class="project-card">
+            <h3>Bitmap</h3>
+            <p>Recriação de site com CSS Flexbox</p>
+          </a>
+          <a href="https://github.com/rphaelmax/site-tulen" target="_blank" class="project-card">
+            <h3>Tulen</h3>
+            <p>Recriação de site com CSS Grid</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Raphael Max</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('theme-toggle');
+    function applyTheme(t) {
+      document.documentElement.setAttribute('data-theme', t);
+      toggle.setAttribute('aria-pressed', t === 'dark');
+    }
+    toggle.addEventListener('click', () => {
+      let cur = document.documentElement.getAttribute('data-theme') || 'light';
+      applyTheme(cur === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+</body>
+
+</html>
