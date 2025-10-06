@@ -103,18 +103,7 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const toggle = document.getElementById('theme-toggle');
-    function applyTheme(t) {
-      document.documentElement.setAttribute('data-theme', t);
-      toggle.setAttribute('aria-pressed', t === 'dark');
-    }
-    toggle.addEventListener('click', () => {
-      let cur = document.documentElement.getAttribute('data-theme') || 'light';
-      applyTheme(cur === 'dark' ? 'light' : 'dark');
-    });
-  </script>
+  <script src="assets/main.js"></script>
 </body>
 
 </html>

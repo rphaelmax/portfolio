@@ -249,6 +249,33 @@ body {
     align-self: flex-start;
 }
 
+/* ==== Animate on Scroll ==== */
+.section,
+.project-card,
+.hero-text,
+.hero-card {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.lead::after {
+    content: '|';
+    animation: blink 1s step-start infinite;
+    margin-left: 4px;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .hero-grid {
         grid-template-columns: 1fr;
