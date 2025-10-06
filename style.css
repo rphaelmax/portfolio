@@ -186,6 +186,7 @@ body {
     border-radius: 5px;
     overflow: hidden;
 }
+
 .skill-bar span {
     display: block;
     height: 100%;
@@ -194,6 +195,7 @@ body {
     border-radius: 5px;
     animation: loadSkill 1.6s cubic-bezier(.2, .9, .2, 1) forwards;
 }
+
 @keyframes loadSkill {
     from {
         width: 0;
@@ -203,6 +205,7 @@ body {
         width: var(--w);
     }
 }
+
 @media (prefers-reduced-motion: reduce) {
     .skill-bar span {
         animation: none;
@@ -216,6 +219,35 @@ body {
     color: var(--muted);
 }
 
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--card);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid var(--muted);
+    border-radius: 8px;
+    font-size: 1rem;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.contact-form button {
+    align-self: flex-start;
+}
 
 @media (max-width: 768px) {
     .hero-grid {

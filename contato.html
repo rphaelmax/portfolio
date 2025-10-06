@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contato — Raphael Max</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand" style="font-weight:bold;">Raphael Max</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#habilidades">Habilidades</a></li>
+                    <li><a href="index.html#projetos">Projetos</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-pressed="false">🌓</button>
+        </div>
+    </header>
+
+    <main class="section gray-bg">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada!');">
+                <label>Nome</label>
+                <input type="text" name="nome" required>
+
+                <label>Telefone</label>
+                <input type="tel" name="telefone" required pattern="[0-9\s()+-]*">
+
+                <label>E-mail</label>
+                <input type="email" name="email" required>
+
+                <label>Mensagem</label>
+                <textarea name="mensagem" rows="5" required></textarea>
+
+                <button type="submit" class="btn primary">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Raphael Max | <a
+                    href="mailto:raphael_max@icloud.com">raphael_max@icloud.com</a></p>
+            <p>Telefone: <a href="tel:+5531982452412">+55 (31) 98245-2412</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const toggle = document.getElementById('theme-toggle');
+        function applyTheme(t) {
+            document.documentElement.setAttribute('data-theme', t);
+            toggle.setAttribute('aria-pressed', t === 'dark');
+        }
+        toggle.addEventListener('click', () => {
+            let cur = document.documentElement.getAttribute('data-theme') || 'light';
+            applyTheme(cur === 'dark' ? 'light' : 'dark');
+        });
+    </script>
+</body>
+
+</html>
