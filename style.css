@@ -2,6 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: var(--text-link);   
+}
+
 body {
     margin: 0;
     font-family: Inter, sans-serif;
@@ -17,6 +22,7 @@ body {
     --color-accent: #FF6B6B;
     --bg: #F7FAFC;
     --text: #0F1724;
+    --text-link: #6969d7;
     --muted: #5A6B7A;
     --card: #fff;
     --gray-bg: #EEEEEE;
@@ -25,6 +31,7 @@ body {
 :root[data-theme="dark"] {
     --bg: #0B1220;
     --text: #E6EEF6;
+    --text-link: #9e9eff;
     --muted: #A9B6C6;
     --card: #0F1724;
     --gray-bg: #090e18;

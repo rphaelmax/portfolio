@@ -1,14 +1,21 @@
+addEventListener("DOMContentLoaded", ()=>{
+  applyTheme(localStorage.getItem("cor"));
+})
+
 document.getElementById('year').textContent = new Date().getFullYear();
 const toggle = document.getElementById('theme-toggle');
 function applyTheme(t) {
   document.documentElement.setAttribute('data-theme', t);
   toggle.setAttribute('aria-pressed', t === 'dark');
   toggle.textContent = t === 'dark' ? '☀️' : '🌙';
+  localStorage.setItem("cor", t)
 }
 toggle.addEventListener('click', () => {
   let cur = document.documentElement.getAttribute('data-theme') || 'light';
   applyTheme(cur === 'dark' ? 'light' : 'dark');
 });
+
+
 
 const text = "Desenvolvedor Full Stack";
 const textElement = document.querySelector(".lead");
