@@ -34,7 +34,7 @@
                 <input type="text" name="nome" required>
 
                 <label>Telefone</label>
-                <input type="tel" name="telefone" required pattern="[0-9\s()+-]*">
+                <input type="tel" id="telefone" name="telefone" maxlength="15" required pattern="[0-9\s()+-]*">
 
                 <label>E-mail</label>
                 <input type="email" name="email" required>
@@ -54,6 +54,13 @@
             <p>Telefone: <a href="tel:+5531982452412">+55 (31) 98245-2412</a></p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById("telefone").addEventListener("input", function () {
+            this.value = this.value.replace(/\D/g, "")
+                .replace(/(\d{2})(\d{1})(\d{4})(\d{4})/, "($1) $2 $3-$4");
+        });
+    </script>
 
     <script src="assets/main.js"></script>
 </body>
