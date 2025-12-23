@@ -195,7 +195,6 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     margin-top: 1rem;
 }
-
 .project-card {
     color: var(--text);
     background: var(--card);
@@ -204,15 +203,12 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .project-card p {
     color: var(--muted);
 }
-
 .project-card h3 {
     color: var(--text);
 }
-
 .project-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
