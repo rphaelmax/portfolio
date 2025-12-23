@@ -15,46 +15,56 @@
             <a href="index.html" class="brand" style="font-weight:bold;">Raphael Max</a>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html#inicio">Início</a></li>
-                    <li><a href="index.html#sobre">Sobre</a></li>
-                    <li><a href="index.html#habilidades">Habilidades</a></li>
-                    <li><a href="index.html#projetos">Projetos</a></li>
-                    <li><a href="contato.html" class="active">Contato</a></li>
+                    <li><a data-i18n="nav_home" href="index.html#inicio">Início</a></li>
+                    <li><a data-i18n="nav_about" href="index.html#sobre">Sobre</a></li>
+                    <li><a data-i18n="nav_skills" href="index.html#habilidades">Habilidades</a></li>
+                    <li><a data-i18n="nav_projects" href="index.html#projetos">Projetos</a></li>
+                    <li><a data-i18n="nav_contact" href="contato.html">Contato</a></li>
                 </ul>
             </nav>
-            <button id="theme-toggle" aria-pressed="false">🌓</button>
+            <div class="controls">
+                <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+                <button id="lang-toggle" aria-label="Change language">🇺🇸 EN</button>
+            </div>
         </div>
     </header>
 
     <main class="section gray-bg">
         <div class="container">
-            <h2>Entre em Contato</h2>
-            <form class="contact-form" onsubmit="event.preventDefault(); alert('Mensagem enviada!');">
-                <label>Nome</label>
+            <h2 data-i18n="contact_title">Entre em Contato</h2>
+            <form 
+            action="https://formspree.io/f/xzdpkywk" 
+            method="POST"
+            class="contact-form">
+                <label data-i18n="contact_lblName">Nome</label>
                 <input type="text" name="nome" required>
 
-                <label>Telefone</label>
+                <label data-i18n="contact_lblCellphone">Telefone</label>
                 <input type="tel" id="telefone" name="telefone" maxlength="15" required pattern="[0-9\s()+-]*">
 
-                <label>E-mail</label>
+                <label data-i18n="contact_lblEmail">E-mail</label>
                 <input type="email" name="email" required>
 
-                <label>Mensagem</label>
+                <label data-i18n="contact_lblMessage">Mensagem</label>
                 <textarea name="mensagem" rows="5" required></textarea>
+                
+                <input type="text" name="_gotcha" style="display:none" />
 
-                <button type="submit" class="btn primary">Enviar</button>
+                <button data-i18n="contact_btnEnviar" type="submit" class="btn primary">Enviar</button>
             </form>
         </div>
     </main>
 
+    <!-- footer -->
     <footer class="site-footer">
         <div class="container">
             <p>© <span id="year"></span> Raphael Max | <a
                     href="mailto:raphael_max@icloud.com">raphael_max@icloud.com</a></p>
-            <p>Telefone: <a href="tel:+5531982452412">+55 (31) 98245-2412</a></p>
+            <p data-i18n="footer_cellphone">Telefone: <a href="tel:+5531982452412">+55 (31) 98245-2412</a></p>
         </div>
     </footer>
 
+    <!-- máscara -->
     <script>
         document.getElementById("telefone").addEventListener("input", function () {
             this.value = this.value.replace(/\D/g, "")
@@ -63,6 +73,7 @@
     </script>
 
     <script src="assets/main.js"></script>
+    <script src="assets/lang.js"></script>
 </body>
 
 </html>

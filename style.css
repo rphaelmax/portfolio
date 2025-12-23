@@ -4,7 +4,7 @@ html {
 
 a {
     text-decoration: none;
-    color: var(--text-link);   
+    color: var(--text-link);
 }
 
 body {
@@ -41,6 +41,9 @@ body {
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
+}
+.container label {
+    color: var(--text);
 }
 
 .site-header {
@@ -133,6 +136,10 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+#sobre p {
+    white-space: pre-line;
+}
+
 .avatar-placeholder {
     width: 200px;
     height: 200px;
@@ -146,6 +153,22 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+.controls button {
+    background-color: #090e18;
+    border: 1px solid var(--border);
+    color: white;
+    border-radius: 6px;                         
+}
+.controls button:hover {
+    color: white;
+    background: #21304f;   
 }
 
 .section {
@@ -174,6 +197,7 @@ body {
 }
 
 .project-card {
+    color: var(--text);
     background: var(--card);
     padding: 1rem;
     border-radius: 10px;
@@ -181,11 +205,18 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.project-card p {
+    color: var(--muted);
+}
+
+.project-card h3 {
+    color: var(--text);
+}
+
 .project-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 
 .skill-bar {
     height: 10px;
