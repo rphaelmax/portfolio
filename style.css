@@ -188,6 +188,7 @@ body {
     font-size: 2rem;
 }
 
+.skills-bar,
 .projects-grid {
     display: grid;
     gap: 1rem;
