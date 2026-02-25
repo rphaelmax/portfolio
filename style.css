@@ -214,32 +214,6 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.skill-bar {
-    height: 10px;
-    background: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.skill-bar span {
-    display: block;
-    height: 100%;
-    width: 0;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-    border-radius: 5px;
-    animation: loadSkill 1.6s cubic-bezier(.2, .9, .2, 1) forwards;
-}
-
-@keyframes loadSkill {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: var(--w);
-    }
-}
-
 @media (prefers-reduced-motion: reduce) {
     .skill-bar span {
         animation: none;
