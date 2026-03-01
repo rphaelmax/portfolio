@@ -111,6 +111,10 @@ body {
     color: var(--text);
 }
 
+.btn.ghost:hover {
+    transform: scale(1.05);
+}
+
 .hero {
     padding: 6rem 0;
 }
