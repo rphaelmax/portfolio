@@ -5,18 +5,17 @@ const translations = {
         nav_skills: "Habilidades",
         nav_projects: "Projetos",
         nav_contact: "Contato",
-        hero_title: "Olá, eu sou Raphael Max",
+        hero_title: "Raphael Max,",
         hero_description: "Desenvolvedor Full Stack",
         hero_btnProject: "Ver projetos",
         about_title: "Sobre mim",
-        about_description: `Sou estudante de TI e gosto de tudo que envolve computação, desde jogar até cibersegurança. 
-A tecnologia sempre fez parte do meu dia a dia e é algo que realmente me interessa.
+        about_description: `Sou estudante de TI e gosto de tudo que envolve computação, desde jogos até cibersegurança. 
+        A tecnologia sempre fez parte do meu dia a dia e é algo que realmente desperta meu interesse.
 
-Costumo desenvolver projetos por conta própria como forma de aprendizado e curto explorar diferentes linguagens e áreas da tecnologia. 
-Não me prendo a uma coisa só, porque acredito que testar, errar e aprender faz parte do processo.
+        Costumo desenvolver projetos por conta própria como forma de aprendizado, experimentando diferentes linguagens e áreas da computação. 
+        Gosto de testar novas ideias e encarar os erros como parte natural do processo de evolução.
 
-Meu objetivo é continuar evoluindo, ganhar experiência prática e me tornar um desenvolvedor full stack qualificado, construindo uma base sólida para o futuro.`,
-        skills_title: "Habilidades",
+        Meu objetivo é continuar evoluindo como desenvolvedor, ganhando experiência prática e ampliando meus conhecimentos enquanto construo projetos e soluções.`,
         projects_title: "Projetos",
         projects_firstTitle: "Site E-Commerce",
         projects_firstDescription: "Projeto de e-commerce fictício, desenvolvido para estudo e prática de desenvolvimento web",
@@ -24,13 +23,7 @@ Meu objetivo é continuar evoluindo, ganhar experiência prática e me tornar um
         projects_secondDescription: "Um gerenciador de tarefas estilo Kanban para criar, editar e organizar tarefas visualmente entre etapas do fluxo de trabalho.",
         projects_thirdTitle: "Tulen",
         projects_thirdDescription: "Recriação de site com CSS Grid; desenvolvido em sala de aula",
-        footer_cellphone_label: "Telefone: ",
-        contact_title: "Entre em Contato",
-        contact_btnEnviar: "Enviar",
-        contact_lblName: "Nome",
-        contact_lblCellphone: "Telefone",
-        contact_lblEmail: "E-mail",
-        contact_lblMessage: "Mensagem",
+        btnVisit: "Visitar Site",
     },
 
     en: {
@@ -39,18 +32,17 @@ Meu objetivo é continuar evoluindo, ganhar experiência prática e me tornar um
         nav_skills: "Skills",
         nav_projects: "Projects",
         nav_contact: "Contact",
-        hero_title: "Hi, I'm Raphael Max",
+        hero_title: "Raphael Max,",
         hero_description: "Full Stack Developer",
         hero_btnProject: "View projects",
         about_title: "About me",
         about_description: `I am an IT student and I enjoy everything related to computing, from gaming to cybersecurity. 
-Technology has always been part of my daily life and it genuinely interests me.
+        Technology has always been a part of my daily life and it is something that genuinely interests me.
 
-I often develop personal projects as a way to learn and enjoy exploring different programming languages and areas of technology. 
-I don’t limit myself to just one thing, because I believe testing, making mistakes, and learning are part of the process.
+        I usually develop projects on my own as a way to learn, experimenting with different programming languages and areas of computing. 
+        I enjoy testing new ideas and looking at mistakes as a natural consequence of the learning and improvement process.
 
-My goal is to keep evolving, gain practical experience, and become a well-prepared full stack developer, building a solid foundation for the future.`,
-        skills_title: "Skills",
+        My goal is to continue evolving as a developer, gaining practical experience and expanding my knowledge while building projects and solutions.`,
         projects_title: "Projects",
         projects_firstTitle: "E-Commerce Website",
         projects_firstDescription: "Fictional e-commerce project developed for study and web development practice",
@@ -58,13 +50,7 @@ My goal is to keep evolving, gain practical experience, and become a well-prepar
         projects_secondDescription: "A Kanban-style task manager that allows users to create, edit, and visually organize tasks across workflow stages",
         projects_thirdTitle: "Tulen",
         projects_thirdDescription: "Website recreation using CSS Grid; developed in class",
-        footer_cellphone_label: "Phone: ",
-        contact_title: "Get in Touch",
-        contact_btnEnviar: "Send",
-        contact_lblName: "Name",
-        contact_lblCellphone: "Phone Number",
-        contact_lblEmail: "E-mail",
-        contact_lblMessage: "Your message",
+        btnVisit: "Visit Site",
     }
 };
 

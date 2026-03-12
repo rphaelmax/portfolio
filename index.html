@@ -12,17 +12,17 @@
 </head>
 
 <body>
+
   <!-- header -->
   <header class="site-header">
     <div class="container header-inner">
-      <a href="#inicio" class="brand" style="font-weight: bold;">Raphael Max</a>
+      <div class="spacer"></div>
       <nav class="main-nav">
         <ul>
           <li><a data-i18n="nav_home" href="#inicio">Início</a></li>
           <li><a data-i18n="nav_about" href="#sobre">Sobre</a></li>
-          <li><a data-i18n="nav_skills" href="#habilidades">Habilidades</a></li>
           <li><a data-i18n="nav_projects" href="#projetos">Projetos</a></li>
-          <li><a data-i18n="nav_contact" href="contato.html">Contato</a></li>
+          <li><a data-i18n="nav_contact" href="#footer">Contato</a></li>
         </ul>
       </nav>
       <div class="controls">
@@ -37,11 +37,11 @@
     <section id="inicio" class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <h1 data-i18n="hero_title">Olá, eu sou <strong>Raphael Max</strong></h1>
+          <h1 data-i18n="hero_title"><strong>Raphael Max,</strong></h1>
           <p data-i18n="hero_description" class="lead">Desenvolvedor Full Stack</p>
           <p>
             <a data-i18n="hero_btnProject" class="btn primary" href="#projetos">Ver projetos</a>
-            <a class="btn ghost" href="assets/Raphael_Max_Alves_Jacomo_CV.pdf" download>Download CV</a>
+            <a class="btn ghost" href="https://github.com/rphaelmax">GitHub</a>
           </p>
         </div>
         <div class="hero-card">
@@ -54,36 +54,16 @@
     <section id="sobre" class="section alt">
       <div class="container">
         <h2 data-i18n="about_title">Sobre mim</h2>
-        <p data-i18n="about_description">Sou estudante de TI e gosto de tudo que envolve computação, desde jogar até
-          cibersegurança. A tecnologia sempre fez parte do meu dia a dia e é algo que realmente me
-          interessa.<br><br>Costumo desenvolver projetos por conta própria como forma de aprendizado e curto explorar
-          diferentes linguagens e áreas da tecnologia. Não me prendo a uma coisa só, porque acredito que testar, errar e
-          aprender faz parte do processo.<br><br>Meu objetivo é continuar evoluindo, ganhar experiência prática e me
-          tornar um desenvolvedor full stack qualificado, construindo uma base sólida para o futuro.</p>
-      </div>
-    </section>
+        <p data-i18n="about_description">Sou estudante de TI e gosto de tudo que envolve computação, desde jogos até
+          cibersegurança.
+          A tecnologia sempre fez parte do meu dia a dia e é algo que realmente desperta meu interesse.
 
-    <!-- skills -->
-    <section id="habilidades" class="section gray-bg">
-      <div class="container">
-        <h2 data-i18n="skills_title">Habilidades</h2>
-        <ul class="skills-bar">
-          <li>
-            <h3>HTML & CSS</h3>
-          </li>
-          <li>
-            <h3>JavaScript</h3>
-          </li>
-          <li>
-            <h3>MySQL</h3>
-          </li>
-          <li>
-            <h3>C#</h3>
-          </li>
-          <li>
-            <h3>Python</h3>
-          </li>
-        </ul>
+          Costumo desenvolver projetos por conta própria como forma de aprendizado, experimentando diferentes linguagens
+          e áreas da computação.
+          Gosto de testar novas ideias e encarar os erros como parte natural do processo de evolução.
+
+          Meu objetivo é continuar evoluindo como desenvolvedor, ganhando experiência prática e ampliando meus
+          conhecimentos enquanto construo projetos e soluções.</p>
       </div>
     </section>
 
@@ -92,32 +72,70 @@
       <div class="container">
         <h2 data-i18n="projects_title">Projetos</h2>
         <div class="projects-grid">
-          <a href="https://github.com/rphaelmax/site-ecommerce" target="_blank" class="project-card">
-            <h3 data-i18n="projects_firstTitle">Site E-Commerce</h3>
-            <p data-i18n="projects_firstDescription">Projeto de e-commerce fictício, desenvolvido para estudo e
-              prática de desenvolvimento web</p>
-          </a>
-          <a href="https://github.com/rphaelmax/taskboard" target="_blank" class="project-card">
-            <h3 data-i18n="projects_secondTitle">Taskboard</h3>
-            <p data-i18n="projects_secondDescription">Um gerenciador de tarefas estilo Kanban para criar, editar e organizar tarefas visualmente entre etapas do fluxo de trabalho
-            </p>
-          </a>
-          <a href="https://github.com/rphaelmax/site-tulen" target="_blank" class="project-card">
-            <h3 data-i18n="projects_thirdTitle">Tulen</h3>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects_firstTitle">Site E-Commerce</h3>
+              <div class="project-tags">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-css">CSS</span>
+                <span class="tag tag-js">JavaScript</span>
+              </div>
+            </div>
+            <p data-i18n="projects_firstDescription">Projeto de e-commerce fictício, desenvolvido para estudo e prática
+              de desenvolvimento web</p>
+            <div class="project-actions">
+              <a href="https://rphaelmax.github.io/site-ecommerce" target="_blank" class="btn primary" data-i18n="btnVisit">Visitar Site
+              </a>
+              <a href="https://github.com/rphaelmax/site-ecommerce" target="_blank" class="btn ghost">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects_secondTitle">Taskboard</h3>
+              <div class="project-tags">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-css">CSS</span>
+                <span class="tag tag-js">JavaScript</span>
+              </div>
+            </div>
+            <p data-i18n="projects_secondDescription">Um gerenciador de tarefas estilo Kanban para criar, editar e
+              organizar tarefas visualmente entre etapas do fluxo de trabalho</p>
+            <div class="project-actions">
+              <a href="https://rphaelmax.github.io/taskboard" target="_blank" class="btn primary" data-i18n="btnVisit">Visitar Site</a>
+              <a href="https://github.com/rphaelmax/taskboard" target="_blank" class="btn ghost">GitHub</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h3 data-i18n="projects_thirdTitle">Tulen</h3>
+              <div class="project-tags">
+                <span class="tag tag-html">HTML</span>
+                <span class="tag tag-css">CSS</span>
+              </div>
+            </div>
             <p data-i18n="projects_thirdDescription">Recriação de site com CSS Grid; desenvolvido em sala de aula</p>
-          </a>
+            <div class="project-actions">
+              <a href="https://rphaelmax.github.io/site-tulen" target="_blank" class="btn primary" data-i18n="btnVisit">Visitar Site</a>
+              <a href="https://github.com/rphaelmax/site-tulen" target="_blank" class="btn ghost">GitHub</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <!-- footer -->
-  <footer class="site-footer">
+  <footer id="footer" class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Raphael Max | <a href="mailto:raphael_max@icloud.com">raphael_max@icloud.com</a></p>
-      <p>
-        <span data-i18n="footer_cellphone_label">Telefone: </span>
-        <a href="tel:+5531982452412">+55 (31) 98245-2412</a>
+      <p>© <span id="year"></span> Raphael Max |
+        <a onclick="
+      navigator.clipboard.writeText(this.innerText);
+      this.textContent = 'Copiado!';
+      setTimeout(() => this.textContent = 'raphael_max@icloud.com', 1500);
+        ">raphael_max@icloud.com
+        </a>
       </p>
     </div>
   </footer>
